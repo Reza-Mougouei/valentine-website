@@ -1,4 +1,4 @@
-<?php
+z<?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -13,19 +13,19 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';                       //gmail SMTP server set to send through
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'user@example.com';                     //SMTP username (your gmail account)
-    $mail->Password   = 'secret';                               //SMTP password (your gmail password or app password)
+    $mail->Username   = 'rezamougouei82@gmail.com';                     //SMTP username (your gmail account)
+    $mail->Password   = 'spdf jizl urrj qwrm';                               //SMTP password (your gmail password or app password)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');         //Set the sender of the message (your email address)
-    $mail->addAddress('joe@example.net', 'Joe User');     //Add a recipient (your bae's email address)
+    $mail->setFrom('rezamougouei82@gmail.com', 'Reza');         //Set the sender of the message (your email address)
+    $mail->addAddress('neekeeshad@gmail.com', 'Neekee');     //Add a recipient (your bae's email address)
 
     //Content
     $mail->isHTML(true);
     $mail->Subject = 'I Love You';
-    $mail->Body    = 'Happy Valentine Day My Love. I love you so much. You are the best thing that has ever happened to me ❤';
+    $mail->Body    = 'Happy Valentine Day My Mimi. I love you so much. You are the best thing that has ever happened to me ❤';
 
     $mail->send();
     echo 'Message has been sent';
